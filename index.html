@@ -5,24 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Md Fagun Molla | Software Engineer - .NET, NestJS & Salesforce</title>
 <meta name="description" content="Portfolio of Md Fagun Molla, Software Engineer at Brain Station 23: .NET, NestJS, Next.js, Salesforce Admin and AI-Driven Development.">
-<meta name="theme-color" content="#059669">
+<meta name="theme-color" content="#0a1018">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
---bg:#f3fbf8;--bg2:#e8f7f1;--card:#ffffff;--line:#d6ede4;--text:#0f2e25;--muted:#4b6b61;--soft:#2f4a42;
---g:#059669;--g2:#10b981;--gdark:#047857;--chip:#ecfdf5;--chipline:#a7f3d0;--chiptext:#047857;--shadow:0 6px 24px -12px rgba(5,150,105,.25);
---navbg:rgba(243,251,248,.85)}
-[data-theme="dark"]{
---bg:#0b1513;--bg2:#0f1d1a;--card:#122420;--line:#1d3832;--text:#e6f4ef;--muted:#93b3a9;--soft:#c3d9d2;
---g:#10b981;--g2:#34d399;--gdark:#6ee7b7;--chip:#0f2a23;--chipline:#1f5245;--chiptext:#6ee7b7;--shadow:0 6px 24px -12px rgba(0,0,0,.6);
---navbg:rgba(11,21,19,.85)}
+--bg:#0a1018;--bg2:#0f1722;--card:#121c29;--line:#1f2d3f;--text:#e8e6e1;--muted:#9097a1;--soft:#c4c6c9;
+--g:#4fb3ff;--g2:#6cc4ff;--gdark:#8fd0ff;--c2:#3ee0b5;--c3:#9b8cff;--c4:#ff8fb1;--onfill:#0a1018;
+--chip:#162335;--chipline:#24405e;--chiptext:#8fd0ff;--shadow:0 8px 28px -14px rgba(0,0,0,.7);
+--navbg:rgba(10,16,24,.85)}
+[data-theme="light"]{
+--bg:#f4f8fc;--bg2:#e9f1fa;--card:#ffffff;--line:#d9e4f0;--text:#0f1d2e;--muted:#55657a;--soft:#2d3d52;
+--g:#2563eb;--g2:#3b82f6;--gdark:#1d4ed8;--c2:#0f9d76;--c3:#7c3aed;--c4:#db2777;--onfill:#ffffff;
+--chip:#eef4ff;--chipline:#c7d8f8;--chiptext:#1d4ed8;--shadow:0 6px 24px -12px rgba(37,99,235,.25);
+--navbg:rgba(244,248,252,.88)}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s}
 body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:
 radial-gradient(700px 400px at 90% 0%,color-mix(in srgb,var(--g2) 16%,transparent),transparent 70%),
-radial-gradient(600px 400px at 0% 40%,color-mix(in srgb,var(--g2) 10%,transparent),transparent 70%)}
+radial-gradient(600px 400px at 0% 40%,color-mix(in srgb,var(--c3) 10%,transparent),transparent 70%)}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
 
@@ -35,24 +37,23 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 .menu a.on{background:var(--chip);color:var(--g);font-weight:600}
 .nav-r{display:flex;align-items:center;gap:10px}
 .icon-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--g);display:grid;place-items:center;cursor:pointer}
-.hire{background:var(--g);color:#fff;font-weight:600;font-size:14px;padding:9px 18px;border-radius:999px;box-shadow:var(--shadow)}
+.hire{background:var(--g);color:var(--onfill);font-weight:600;font-size:14px;padding:9px 18px;border-radius:999px;box-shadow:var(--shadow)}
 .hire:hover{background:var(--gdark)}
-[data-theme="dark"] .hire:hover{background:#059669}
 @media(max-width:860px){.menu{display:none}}
 
 /* hero */
 .hero{display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;padding:70px 0 50px}
 @media(max-width:860px){.hero{grid-template-columns:1fr;text-align:left}.photo{order:-1;justify-self:center}}
 .hello{font-size:clamp(42px,6.5vw,68px);font-weight:800;line-height:1.08;letter-spacing:-.02em}
-.hello span{color:var(--g2)}
-.role{font-size:20px;font-weight:700;color:var(--gdark);margin:8px 0 22px}
-.role i{font-style:normal;color:var(--muted);font-weight:400;margin:0 10px}
+.hello span{background:linear-gradient(90deg,var(--g),var(--c4) 60%,var(--c3));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:18px;font-weight:700;color:var(--gdark);margin:8px 0 22px}
+.role i{font-style:normal;color:var(--muted);font-weight:400;margin:0 8px}
 .role b{font-weight:600;color:var(--g)}
 .bio{color:var(--soft);font-size:16.5px;max-width:560px;margin-bottom:14px}
-.bio u{text-decoration-color:var(--g2);text-underline-offset:4px;text-decoration-thickness:2px}
+.bio u{text-decoration-color:var(--c2);text-underline-offset:4px;text-decoration-thickness:2px}
 .btns{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 22px}
 .b{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:14.5px;transition:.2s;border:1.5px solid var(--chipline)}
-.b.fill{background:var(--g);color:#fff;border-color:var(--g);box-shadow:var(--shadow)}
+.b.fill{background:var(--g);color:var(--onfill);border-color:var(--g);box-shadow:var(--shadow)}
 .b.fill:hover{transform:translateY(-2px)}
 .b.out{background:var(--card);color:var(--gdark)}
 .b.out:hover{border-color:var(--g)}
@@ -61,18 +62,19 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px
 .socials a{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:var(--card);border:1px solid var(--line);color:var(--soft);transition:.2s}
 .socials a:hover{color:var(--g);border-color:var(--g)}
 .socials svg{width:18px;height:18px}
-.photo{width:min(340px,80vw);aspect-ratio:1;border-radius:50%;padding:10px;background:linear-gradient(135deg,var(--g2),#a7f3d0,var(--g));box-shadow:0 30px 60px -25px color-mix(in srgb,var(--g) 60%,transparent);justify-self:end;position:relative}
+.photo{width:min(340px,80vw);aspect-ratio:1;border-radius:50%;padding:10px;background:linear-gradient(135deg,var(--g),var(--c3),var(--c2));box-shadow:0 30px 60px -25px color-mix(in srgb,var(--g) 60%,transparent);justify-self:end;position:relative}
 .photo .in{width:100%;height:100%;border-radius:50%;background:var(--card);display:grid;place-items:center;overflow:hidden;border:6px solid var(--card)}
 .photo .in img{width:100%;height:100%;object-fit:cover}
 .photo .ini{font-size:96px;font-weight:800;letter-spacing:-.04em;background:linear-gradient(135deg,var(--g),var(--g2));-webkit-background-clip:text;background-clip:text;color:transparent}
 .badge-float{position:absolute;bottom:18px;left:-10px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 14px;box-shadow:var(--shadow);font-size:13px;font-weight:600;display:flex;align-items:center;gap:8px}
-.badge-float .dot{width:9px;height:9px;border-radius:50%;background:var(--g2);box-shadow:0 0 0 4px color-mix(in srgb,var(--g2) 25%,transparent)}
+.badge-float .dot{width:9px;height:9px;border-radius:50%;background:var(--c2);box-shadow:0 0 0 4px color-mix(in srgb,var(--c2) 25%,transparent)}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:30px}
 @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;text-align:center;box-shadow:var(--shadow)}
 .stat b{display:block;font-size:32px;font-weight:800;color:var(--g)}
+.stat:nth-child(2) b{color:var(--c2)}.stat:nth-child(3) b{color:var(--c3)}.stat:nth-child(4) b{color:var(--c4)}
 .stat span{font-size:13.5px;color:var(--muted)}
 
 /* section */
@@ -85,7 +87,7 @@ section{padding:70px 0}
 
 /* experience */
 .tl{position:relative;padding-left:30px;display:flex;flex-direction:column;gap:22px}
-.tl::before{content:"";position:absolute;left:8px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--g2),var(--chipline))}
+.tl::before{content:"";position:absolute;left:8px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--g),var(--c2),var(--c3))}
 .exp{position:relative;padding:26px}
 .exp::before{content:"";position:absolute;left:-28px;top:34px;width:12px;height:12px;border-radius:50%;background:var(--g2);box-shadow:0 0 0 5px color-mix(in srgb,var(--g2) 22%,transparent)}
 .exp-h{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;margin-bottom:14px}
@@ -95,7 +97,7 @@ section{padding:70px 0}
 .exp h3{font-size:19px;font-weight:700}
 .meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:4px;font-size:13px;color:var(--muted)}
 .tag{font-size:12px;font-weight:600;color:var(--chiptext);background:var(--chip);border:1px solid var(--chipline);padding:2px 10px;border-radius:999px}
-.tag.now{background:var(--g);color:#fff;border-color:var(--g)}
+.tag.now{background:var(--c2);color:var(--onfill);border-color:var(--c2)}
 .exp-r{text-align:right}
 .exp-r b{display:block;color:var(--g);font-size:16px}
 .exp-r span{font-size:13px;color:var(--muted)}
@@ -134,6 +136,9 @@ section{padding:70px 0}
 .proj h3{font-size:19px;font-weight:700;margin-bottom:12px}
 .proj ul{flex:1}
 .proj .chips{margin-top:18px}
+.roles{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:16px;font-size:12px;font-weight:600}
+.roles span{padding:4px 10px;border-radius:8px;border:1px dashed var(--c3);color:var(--c3)}
+.roles span:nth-child(2){border-color:var(--g);color:var(--g)}.roles span:nth-child(3){border-color:var(--c2);color:var(--c2)}.roles span:nth-child(4){border-color:var(--c4);color:var(--c4)}.roles span:nth-child(5){border-color:var(--gdark);color:var(--gdark)}
 
 /* ai */
 .ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -150,11 +155,12 @@ section{padding:70px 0}
 .ach{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
 .a{padding:24px}
 .a .big{font-size:36px;font-weight:800;color:var(--g);line-height:1.1}
+.a:nth-child(2) .big{color:var(--c2)}.a:nth-child(3) .big{color:var(--c3)}.a:nth-child(4) .big{color:var(--c4)}
 .a h4{font-size:16.5px;margin:6px 0 4px}
 .a p{font-size:14px;color:var(--muted)}
 
 /* contact */
-.contact{padding:40px;text-align:center;background:linear-gradient(135deg,var(--g),#0d9488);color:#fff;border:0}
+.contact{padding:40px;text-align:center;background:linear-gradient(135deg,#1e6fd9,#6d5dfc);color:#fff;border:0}
 .contact h2{font-size:clamp(26px,4vw,36px);font-weight:800}
 .contact > p{opacity:.9;margin:8px auto 28px;max-width:520px}
 .cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;text-align:left}
@@ -162,11 +168,10 @@ section{padding:70px 0}
 .ci{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px}
 .ci small{display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;opacity:.8}
 .ci span{font-weight:600;word-break:break-all}
-.ci button,.ci a.mini{font:inherit;font-size:12.5px;font-weight:600;background:#fff;color:var(--gdark);border:0;border-radius:999px;padding:6px 13px;cursor:pointer;white-space:nowrap}
-[data-theme="dark"] .ci button,[data-theme="dark"] .ci a.mini{color:#047857}
+.ci button,.ci a.mini{font:inherit;font-size:12.5px;font-weight:600;background:#fff;color:#1e40af;border:0;border-radius:999px;padding:6px 13px;cursor:pointer;white-space:nowrap}
 
 footer{text-align:center;color:var(--muted);font-size:13.5px;padding:30px 0 40px}
-.totop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;background:var(--g);color:#fff;border:0;display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:30}
+.totop{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;background:var(--g);color:var(--onfill);border:0;display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:.3s;z-index:30}
 .totop.show{opacity:1;pointer-events:auto}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -193,12 +198,12 @@ footer{text-align:center;color:var(--muted);font-size:13.5px;padding:30px 0 40px
   <header class="hero" id="about">
     <div class="reveal">
       <h1 class="hello">Hi, I'm <span>Fagun</span></h1>
-      <div class="role">Software Engineer<i>||</i><b>.NET, NestJS, Salesforce</b></div>
-      <p class="bio">A Software Engineer at <b>Brain Station 23</b> working on backend and full-stack development with ASP.NET Core, NestJS and Next.js. I build clean, maintainable APIs and document management solutions, and I work as a <b>Salesforce Admin</b> automating business processes for clients.</p>
+      <div class="role">Software Engineer<i>||</i><b>.NET, NestJS, Next.js and Salesforce</b></div>
+      <p class="bio">A Software Engineer at <b>Brain Station 23</b> working on backend and full-stack development with ASP.NET Core, NestJS and Next.js. I build clean, maintainable APIs and a multi-role Quality Management System, and I work as a <b>Salesforce Admin</b> automating business processes for clients.</p>
       <p class="bio">I follow an <u>AI-Driven Development Lifecycle (AIDLC)</u> in my daily work. Outside of work, I'm a competitive programmer with 2,800+ problems solved and an ICPC Asia Dhaka Regional participant.</p>
       <div class="btns">
         <a class="b fill" href="#projects">View Projects <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="b out" href="https://www.linkedin.com/in/fagun06/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.850-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.850 3.37-1.850 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>Let's Connect</a>
+        <a class="b out" href="https://www.linkedin.com/in/fagun06/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>Let's Connect</a>
         <a class="b out" href="https://github.com/Fagun06" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>GitHub</a>
       </div>
       <div class="socials">
@@ -207,7 +212,7 @@ footer{text-align:center;color:var(--muted);font-size:13.5px;padding:30px 0 40px
       </div>
     </div>
     <div class="photo reveal">
-      <div class="in" id="avatar"><span class="ini">FM</span></div>
+      <div class="in" id="avatar"><img src="profile.jpg" alt="Md Fagun Molla" width="300" height="300"></div>
       <div class="badge-float"><span class="dot"></span>Open to opportunities</div>
     </div>
   </header>
@@ -231,8 +236,8 @@ footer{text-align:center;color:var(--muted);font-size:13.5px;padding:30px 0 40px
           <div class="exp-r"><b>Brain Station 23 PLC</b><span>Dhaka, Bangladesh</span></div>
         </div>
         <ul>
-          <li>Building <b>QMS</b>, a client document management system with Microsoft Word integration for viewing, editing and managing documents.</li>
-          <li>Developing backend services with NestJS and frontend features with Next.js.</li>
+          <li>Building <b>QMS (Quality Management System)</b> for a client, with Microsoft Word integration for viewing, editing and managing quality documents.</li>
+          <li>Developing the backend with NestJS and the frontend with Next.js, including multi-role access for General User, Document Owner, Reviewer, QA and Admin.</li>
           <li>Integrating Microsoft Word with SharePoint for document editing and management workflows.</li>
           <li>Working as <b>Salesforce Admin</b> on the <b>ProCarrier</b> client project: Flows, Validation Rules, Profiles, Permission Sets, Reports and Dashboards.</li>
           <li>Supporting system administration, troubleshooting and business process improvements.</li>
@@ -307,13 +312,16 @@ footer{text-align:center;color:var(--muted);font-size:13.5px;padding:30px 0 40px
     <div class="projects">
       <div class="card proj reveal">
         <div class="top"><span class="tag">Client project</span><span class="tag now">In progress</span></div>
-        <h3>QMS - Document Management System</h3>
+        <h3>QMS - Quality Management System</h3>
         <ul>
-          <li>Document management system with Microsoft Word integration for viewing, editing and managing documents.</li>
-          <li>SharePoint integration for document storage and collaborative editing workflows.</li>
+          <li>Quality Management System for controlled documents, with Microsoft Word integration for viewing, editing and managing them.</li>
+          <li><b>Backend:</b> NestJS services and REST APIs. <b>Frontend:</b> Next.js web application.</li>
+          <li><b>Multi-role access:</b> General User, Document Owner, Reviewer, QA and Admin, each with its own permissions and workflow.</li>
+          <li>SharePoint integration for document storage and collaborative editing.</li>
           <li>Built with AI-Driven Development Lifecycle (AIDLC) practices.</li>
         </ul>
-        <div class="chips"><span class="chip">NestJS</span><span class="chip">Next.js</span><span class="chip">Microsoft Word</span><span class="chip">SharePoint</span></div>
+        <div class="roles"><span>General User</span><span>Document Owner</span><span>Reviewer</span><span>QA</span><span>Admin</span></div>
+        <div class="chips"><span class="chip">NestJS</span><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">RBAC</span><span class="chip">Microsoft Word</span><span class="chip">SharePoint</span><span class="chip">AIDLC</span></div>
       </div>
       <div class="card proj reveal">
         <div class="top"><span class="tag">Client project</span><span class="tag now">Ongoing</span></div>
@@ -391,10 +399,10 @@ footer{text-align:center;color:var(--muted);font-size:13.5px;padding:30px 0 40px
 const root = document.documentElement, ti = document.getElementById('ti');
 const moon = '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>';
 const sun = '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';
-function setTheme(t){ if(t==='dark') root.setAttribute('data-theme','dark'); else root.removeAttribute('data-theme'); ti.innerHTML = t==='dark' ? sun : moon; try{localStorage.setItem('fm-theme',t)}catch(e){} }
-let saved='light'; try{saved=localStorage.getItem('fm-theme')||'light'}catch(e){}
+function setTheme(t){ if(t==='light') root.setAttribute('data-theme','light'); else root.removeAttribute('data-theme'); ti.innerHTML = t==='light' ? moon : sun; try{localStorage.setItem('fm-theme2',t)}catch(e){} }
+let saved='dark'; try{saved=localStorage.getItem('fm-theme2')||'dark'}catch(e){}
 setTheme(saved);
-document.getElementById('theme').addEventListener('click',()=>setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark'));
+document.getElementById('theme').addEventListener('click',()=>setTheme(root.getAttribute('data-theme')==='light'?'dark':'light'));
 
 // copy
 document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{
